@@ -1,0 +1,21 @@
+{% extends "shuup/admin/base.jinja" %}
+{% from "shuup/admin/macros/general.jinja" import content_block, content_with_sidebar, text_between_fields %}
+
+{% block content %}
+    {% call content_with_sidebar(content_id="customer_form") %}
+        <form method="post" id="customer_form">
+            {% csrf_token %}
+            {% call content_block(_("Customer Information"), "fa-info-circle") %}
+                {{ bs3.field(form.enabled) }}
+
+                {{ bs3.field(form.shop) }}
+                {{ bs3.field(form.identifier) }}
+                {{ bs3.field(form.first_name) }}
+                {{ bs3.field(form.last_name) }}
+
+            {% endcall %}
+        </form>
+    {% endcall %}
+{% endblock %}
+
+
