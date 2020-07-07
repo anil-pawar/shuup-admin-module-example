@@ -1,5 +1,5 @@
 
-# SHUUP Sample model example
+# SHUUP admin module example
 
 Add 
 ```python
