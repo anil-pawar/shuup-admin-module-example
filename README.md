@@ -1,13 +1,22 @@
-This is Sample SHUUP model
 
-Add 'example.first' in INSTALLED_APPS in your settings.py
+# SHUUP Sample model example
+
+Add 
+```python
+'example.first'
+```
+
+in INSTALLED_APPS
 
 e.g.
-
+```python
 INSTALLED_APPS = [
     'example.first'
 ]
+```
 
-Run migrate to update/update DB setup scripts:
-
-python manage.py migrate
+#### Run migrate
+Run migrate to run install/update setup scripts:
+```sh
+$ python manage.py migrate
+```
